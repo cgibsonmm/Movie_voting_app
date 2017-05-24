@@ -1,0 +1,23 @@
+<h1 style="text-align: center;">Movies</h1>
+<div class="text-center">
+  <h4><%= link_to 'New Movie', new_movie_path %><h4>
+</div>
+<br>
+
+<% @movies.each do |movie| %>
+  <div class="col-sm-6- col-md-4">
+    <div class="thumbnail thumb-box">
+      <h2 style="text-align:center;">
+        <%= link_to movie.title, movie_path(movie) %>
+      </h2>
+      <%= image_tag movie.image.url(:medium) %>
+      <div class="caption" style="text-align:center;">
+      <%= render 'parts/buttons', movie: movie %> 
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+
+
