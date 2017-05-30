@@ -18,6 +18,8 @@
 
 .thumb-box{
 	height: 500px;
+	background-color: #222;
+	border: 1px solid black;
 }
 
 .like:hover{
@@ -28,3 +30,6 @@
 	max-width: 50%;
 }
 
+body{
+	background: image-url('grey.jpg') center no-repeat fixed; 
+}
